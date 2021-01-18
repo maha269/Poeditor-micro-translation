@@ -1,9 +1,7 @@
 # Laravel Poeditor Synchronization
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/nextapps/laravel-poeditor-sync.svg?style=flat-square)](https://packagist.org/packages/nextapps/laravel-poeditor-sync)
-[![Build Status](https://img.shields.io/travis/nextapps-be/laravel-poeditor-sync/master.svg?style=flat-square)](https://travis-ci.org/nextapps-be/laravel-poeditor-sync)
-[![Quality Score](https://img.shields.io/scrutinizer/g/nextapps-be/laravel-poeditor-sync.svg?style=flat-square)](https://scrutinizer-ci.com/g/nextapps-be/laravel-poeditor-sync)
-[![Total Downloads](https://img.shields.io/packagist/dt/nextapps/laravel-poeditor-sync.svg?style=flat-square)](https://packagist.org/packages/nextapps/laravel-poeditor-sync)
+[![Issues](https://img.shields.io/github/issues/maha269/Poeditor-micro-translation)](https://packagist.org/packages/poeditor/laravel-poeditor-sync)
+[![Total Downloads](https://packagist.org/packages/poeditor/laravel-poeditor-sync/stats)](https://packagist.org/packages/poeditor/laravel-poeditor-sync)
 
 Upload and download POEditor translations.
 Both PHP and JSON translation files are supported.
@@ -21,6 +19,7 @@ You can add these two classes to providers key in config/app.php:
 
     NextApps\PoeditorSync\PoeditorSyncServiceProvider::class,
     NextApps\PoeditorSync\PoeditorRouteServiceProvider::class
+    
 You can publish the configuration file:
 
 ```bash
@@ -82,19 +81,6 @@ php artisan poeditor:upload --force
 ``` bash
 composer test
 ```
-
-### Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Credits
-
-- [Günther Debrauwer](https://github.com/nextapps)
-- [All Contributors](../../contributors)
 
 ## License
 
