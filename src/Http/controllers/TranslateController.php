@@ -10,16 +10,9 @@ class TranslateController extends Controller
 {
     public function send(){
         $upload = Artisan::call('poeditor:upload');
-        if($upload){
-            return response()->json([
-                'success'=>'true',
-                'message'=>'local files uploaded successully',
-                'code'=>'200',
-            ]);
-        }
         return response()->json([
-            'success'=>'false',
-            'message'=>'error uploading local files',
+            'success'=>'true',
+            'message'=>'local files uploaded successully',
             'code'=>'200',
         ]);
     }
