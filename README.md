@@ -14,7 +14,7 @@ Vendor PHP / JSON translations can also be uploaded / downloaded.
 You can install the package via composer:
 
 ```bash
-composer require nextapps/laravel-poeditor-sync --dev
+composer require poeditor/laravel-poeditor-sync --dev
 ```
 
 You can publish the configuration file:
