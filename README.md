@@ -17,10 +17,15 @@ You can install the package via composer:
 composer require poeditor/laravel-poeditor-sync --dev
 ```
 
+You can add these two classes to providers key in config/app.php:
+
+    NextApps\PoeditorSync\PoeditorSyncServiceProvider::class,
+    NextApps\PoeditorSync\PoeditorRouteServiceProvider::class
 You can publish the configuration file:
 
 ```bash
 php artisan vendor:publish --provider="NextApps\PoeditorSync\PoeditorSyncServiceProvider"
+php artisan vendor:publish --provider="NextApps\PoeditorSync\PoeditorRouteServiceProvider"
 ```
 
 Set the POEditor API key and Project ID in your env-file:
