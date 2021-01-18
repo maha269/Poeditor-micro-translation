@@ -1,7 +1,8 @@
 # Laravel Poeditor Synchronization
 
-[![Issues](https://img.shields.io/github/issues/maha269/Poeditor-micro-translation)](https://packagist.org/packages/poeditor/laravel-poeditor-sync)
-[![Total Downloads](https://packagist.org/packages/poeditor/laravel-poeditor-sync/stats)](https://packagist.org/packages/poeditor/laravel-poeditor-sync)
+[![Issues](https://img.shields.io/github/issues/maha269/Poeditor-micro-translation)](https://img.shields.io/github/issues/maha269/Poeditor-micro-translation)
+[![Total Downloads](https://packagist.org/packages/poeditor/laravel-poeditor-sync/statsZ)](https://packagist.org/packages/poeditor/laravel-poeditor-sync)
+[![Latest Version on Packagist](https://img.shields.io/packages/poeditor/laravel-poeditor-sync#v1.0.1)](https://packagist.org/packages/poeditor/laravel-poeditor-sync)
 
 Upload and download POEditor translations.
 Both PHP and JSON translation files are supported.
