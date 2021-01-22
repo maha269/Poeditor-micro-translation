@@ -9,7 +9,7 @@ class UploadResponse
      *
      * @var array
      */
-    protected $content;
+    public $content;
 
     /**
      * Create a new POEditor upload response instance.

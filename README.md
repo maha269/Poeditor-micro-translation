@@ -56,6 +56,10 @@ All translations in all supported locales will be downloaded.
 ``` bash
 php artisan poeditor:download
 ```
+Or use the API GET endpoint 
+
+`/api/poeditor/translation/download`
+
 
 ### Upload Translations
 
@@ -64,6 +68,10 @@ Upload translations of the default app locale:
 ``` bash
 php artisan poeditor:upload
 ```
+Or use the API GET endpoint 
+
+`/api/poeditor/translation/upload`
+
 
 Upload translations of specified locale:
 

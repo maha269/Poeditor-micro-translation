@@ -19,12 +19,11 @@ class PoeditorRouteServiceProvider extends RouteServiceProvider
     public function boot()
     {
         parent::boot();
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
 
     }
     public function register()
     {
-//        $this->app->register('NextApps\PoeditorSync\PoeditorRouteServiceProvider');
         $this->commands([
             UploadCommand::class,
             DownloadCommand::class
