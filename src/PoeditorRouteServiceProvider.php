@@ -29,16 +29,5 @@ class PoeditorRouteServiceProvider extends RouteServiceProvider
             DownloadCommand::class
         ]);
     }
-    public function map()
-    {
-        $this->mapWebRoutes();
-    }
-    protected function mapWebRoutes()
-    {
-        Route::prefix('PoeditorSync\web')
-            ->middleware('api')
-            ->namespace($this->namespace)
-            ->group(__DIR__ . '\..\routes\web.php');
-    }
 
 }
