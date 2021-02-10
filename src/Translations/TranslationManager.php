@@ -76,7 +76,7 @@ class TranslationManager
      */
     protected function getVendorTranslations(string $locale)
     {
-        if (! $this->filesystem->exists(resource_path('lang/vendor'))) {
+        if (!$this->filesystem->exists(resource_path('lang/vendor'))) {
             return [];
         }
 
@@ -132,7 +132,7 @@ class TranslationManager
      */
     protected function getJsonTranslations(string $filename)
     {
-        if (! $this->filesystem->exists($filename)) {
+        if (!$this->filesystem->exists($filename)) {
             return [];
         }
 
@@ -175,14 +175,14 @@ class TranslationManager
      */
     protected function createVendorTranslationFiles(array $translations, string $locale)
     {
-        if (! Arr::has($translations, 'vendor')) {
+        if (!Arr::has($translations, 'vendor')) {
             return;
         }
 
         foreach ($translations['vendor'] as $package => $packageTranslations) {
             $path = resource_path("lang/vendor/{$package}/{$locale}");
 
-            if (! $this->filesystem->exists($path)) {
+            if (!$this->filesystem->exists($path)) {
                 $this->filesystem->makeDirectory($path, 0755, true);
             } else {
                 $this->filesystem->cleanDirectory($path);
@@ -212,7 +212,7 @@ class TranslationManager
 
             $this->filesystem->put(
                 "{$folder}/{$filename}.php",
-                '<?php'.PHP_EOL.PHP_EOL."return {$array};".PHP_EOL,
+                '<?php' . PHP_EOL . PHP_EOL . "return {$array};" . PHP_EOL,
             );
         }
     }
@@ -247,7 +247,7 @@ class TranslationManager
      */
     protected function createEmptyLocaleFolder(string $locale)
     {
-        if (! $this->filesystem->exists(resource_path('lang'))) {
+        if (!$this->filesystem->exists(resource_path('lang'))) {
             $this->filesystem->makeDirectory(resource_path('lang'));
         }
 

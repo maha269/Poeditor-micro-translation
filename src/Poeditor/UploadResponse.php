@@ -30,7 +30,7 @@ class UploadResponse
      */
     public function getAddedTermsCount()
     {
-        return (int) $this->content['result']['terms']['added'];
+        return (int)$this->content['result']['terms']['added'];
     }
 
     /**
@@ -40,7 +40,7 @@ class UploadResponse
      */
     public function getDeletedTermsCount()
     {
-        return (int) $this->content['result']['terms']['deleted'];
+        return (int)$this->content['result']['terms']['deleted'];
     }
 
     /**
@@ -50,7 +50,7 @@ class UploadResponse
      */
     public function getAddedTranslationsCount()
     {
-        return (int) $this->content['result']['translations']['added'];
+        return (int)$this->content['result']['translations']['added'];
     }
 
     /**
@@ -60,6 +60,6 @@ class UploadResponse
      */
     public function getUpdatedTranslationsCount()
     {
-        return (int) $this->content['result']['translations']['updated'];
+        return (int)$this->content['result']['translations']['updated'];
     }
 }

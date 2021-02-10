@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'api', 'middleware' => 'api'], function() {
+Route::group(['prefix' => 'api', 'middleware' => 'api'], function () {
     Route::get('/poeditor/translation/upload', [\NextApps\PoeditorSync\Http\Controllers\TranslateController::class, 'send']);
     Route::get('/poeditor/translation/download', [\NextApps\PoeditorSync\Http\Controllers\TranslateController::class, 'download']);
 });

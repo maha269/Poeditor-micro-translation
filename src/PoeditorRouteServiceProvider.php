@@ -11,7 +11,7 @@ use NextApps\PoeditorSync\Poeditor\Poeditor;
 
 class PoeditorRouteServiceProvider extends RouteServiceProvider
 {
-    protected $namespace='NextApps\PoeditorSync\Controllers';
+    protected $namespace = 'NextApps\PoeditorSync\Controllers';
 
     /**
      * Bootstrap the application services.
@@ -19,9 +19,10 @@ class PoeditorRouteServiceProvider extends RouteServiceProvider
     public function boot()
     {
         parent::boot();
-        $this->loadRoutesFrom(__DIR__.'/Routes/api.php');
+        $this->loadRoutesFrom(__DIR__ . '/Routes/api.php');
 
     }
+
     public function register()
     {
         $this->commands([
