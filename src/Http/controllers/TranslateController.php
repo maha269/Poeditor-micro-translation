@@ -12,7 +12,8 @@ use NextApps\PoeditorSync\Translations\TranslationManager;
 
 class TranslateController extends Controller
 {
-    public function send(){
+    public function send()
+    {
         if (app()->getLocale() === null) {
             $this->error('Invalid locale provided!');
 
@@ -22,7 +23,7 @@ class TranslateController extends Controller
 
         $response = app(Poeditor::class)->upload(
             $this->getPoeditorLocale(),
-            $translations,false);
+            $translations, false);
         if ($response->content['response']['code'] == 200) {
             $message = $response->content['response']['status'] . ' => All translations have been uploaded. (' .
                 $response->content['result']['terms']['added'] . ') terms added, (' .
@@ -33,7 +34,9 @@ class TranslateController extends Controller
         }
         return false;
     }
-    public function download(){
+
+    public function download()
+    {
         $this->getLocales()->each(function ($locale, $key) {
             $translations = app(Poeditor::class)->download(is_string($key) ? $key : $locale);
 
@@ -41,15 +44,17 @@ class TranslateController extends Controller
         });
         return ['message' => 'Sussess : All ranslations have been downloaded'];
     }
+
     public function isSuccess($response): bool
     {
         return isset($response) && is_array($response) && ($response['code'] === 200 || $response['code'] === 201);
     }
+
     protected function getLocale()
     {
         $locale = $this->argument('locale') ?? app()->getLocale();
 
-        if (! in_array($locale, config('poeditor-sync.locales'))) {
+        if (!in_array($locale, config('poeditor-sync.locales'))) {
             return;
         }
 
@@ -71,6 +76,7 @@ class TranslateController extends Controller
 
         return app()->getLocale();
     }
+
     protected function getLocales()
     {
         return collect(config('poeditor-sync.locales'));

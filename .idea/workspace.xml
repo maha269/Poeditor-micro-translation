@@ -31,6 +31,10 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\translation package\Poeditor-micro-translation\src\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\translation package\Poeditor-micro-translation\src\Http" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\translation package\Poeditor-micro-translation\src\Routes" />
     </key>
